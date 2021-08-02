@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div class="p-3 mb-2 bg-primary text-white">
+    
+   Thanks your details have been received successfully
+
+</div>
+<h3>Work</h3>
+<div class="info">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+              
+              <th scope="col">Surname</th>
+
+              <th scope="col">Lastname</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{s}}</td>
+              <td>{{l}}</td>
+              <td>{{p}}</td>
+              <td>{{g}}</td>
+              <td>{{ema}}</td>
+            </tr>
+           
+          </tbody>
+      </table>
+</div>
+
+{% endblock %}

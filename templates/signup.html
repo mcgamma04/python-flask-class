@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="margin-left: auto; margin-right: auto; width: 500px;">
+
+<div class="bg-primary" style="color:#fff;padding:8px;text-align: center;font-size: 16px;">Register here</div>
+
+<form method="POST" action="">
+  <div class="mb-3">
+    <label for="surname" class="form-label">Surname</label>
+    <input type="text" name="surname" class="form-control" id="surname" aria-describedby="surname">
+   </div>
+  <div class="mb-3">
+    <label for="lastname" class="form-label">Lastname</label>
+    <input type="text" name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp">
+     </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone Number</label>
+    <input type="number" name="phone" class="form-control" id="phone" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your contact with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="gender" class="form-label">Gender</label>
+  <select class="form-select" name="gender" id="gender" aria-label="Default select example">
+    <option selected>Select Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    
+  </select>
+</div>
+    <div class="mb-3">
+      <label for="myemail" class="form-label">Email address</label>
+      <input type="email" name="myemail" class="form-control" id="myemail" aria-describedby="emailHelp">
+      <div id="emailHelp"  class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password"  name="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <!--<div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>-->
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+  {% endblock %}

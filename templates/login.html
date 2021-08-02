@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="margin-left: auto; margin-right: auto; width: 500px;">
+
+<div class="bg-primary" style="color:#fff;padding:8px;text-align: center;font-size: 16px;">Login here</div>
+
+<form method="POST" action="">
+  
+    <div class="mb-3">
+      <label for="myemail" class="form-label">Email address</label>
+      <input type="email" name="myemail" class="form-control" id="myemail" aria-describedby="emailHelp">
+      <div id="emailHelp"  class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password"  name="mypassword" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div id="emailHelp"  class="form-text">{{msg}}.</div>
+    
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>
+  {% endblock %}
